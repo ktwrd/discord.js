@@ -62,6 +62,7 @@ exports.DefaultOptions = {
    * @property {number} [large_threshold=50] Number of members in a guild after which offline users will no longer be
    * sent in the initial guild member list, must be between 50 and 250
    * @property {IntentsResolvable} intents=IntentsResolvable.ALL Intents to enable for this connection
+   * @property {number} version=9 API version to use
    */
   ws: {
     large_threshold: 50,
@@ -71,20 +72,20 @@ exports.DefaultOptions = {
       $browser: 'discord.js',
       $device: 'discord.js',
     },
-    version: 6,
+    version: 9,
   },
 
   /**
    * HTTP options
    * @typedef {Object} HTTPOptions
-   * @property {number} [version=7] API version to use
+   * @property {number} [version=9] API version to use
    * @property {string} [api='https://discord.com/api'] Base url of the API
    * @property {string} [cdn='https://cdn.discordapp.com'] Base url of the CDN
    * @property {string} [invite='https://discord.gg'] Base url of invites
    * @property {string} [template='https://discord.new'] Base url of templates
    */
   http: {
-    version: 7,
+    version: 9,
     api: 'https://discord.com/api',
     cdn: 'https://cdn.discordapp.com',
     invite: 'https://discord.gg',
