@@ -45,8 +45,8 @@ discord.js is a powerful [Node.js](https://nodejs.org) module that allows you to
 Ignore any warnings about unmet peer dependencies, as they're all optional.
 
 Without voice support: `npm install discord.js`  
-With voice support ([@discordjs/opus](https://www.npmjs.com/package/@discordjs/opus)): `npm install discord.js @discordjs/opus`  
-With voice support ([opusscript](https://www.npmjs.com/package/opusscript)): `npm install discord.js opusscript`
+With voice support ([@discordjs/opus](https://www.npmjs.com/package/@discordjs/opus)): `npm install @ktwrd/discord.js @discordjs/opus`  
+With voice support ([opusscript](https://www.npmjs.com/package/opusscript)): `npm install @ktwrd/discord.js opusscript`
 
 ### Audio engines
 
@@ -67,7 +67,7 @@ For production bots, using @discordjs/opus should be considered a necessity, esp
 ## Example usage
 
 ```js
-const Discord = require('discord.js');
+const Discord = require('@ktwrd/discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
